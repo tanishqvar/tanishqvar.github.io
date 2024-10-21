@@ -11,7 +11,7 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 4x4;'>
 
-        <a-marker type='barcode' value='46'>
+        <a-marker type='barcode' value='246'>
             <a-cylinder position='0 1 0' color="yellow"></a-cylinder>
         </a-marker>
     
@@ -20,19 +20,3 @@
         </a-scene>
     </body>
 </html>
-=======================================================================
-
-
-Don’t worry if this looks scary. Notice the highlighted regions:
-
- <a-marker type='barcode' value='46'> 
-This is used to identify barcodes for the value 46
-
-<a-box position='0 1 0' color="yellow"></a-box> 
-Once the barcode has been identified, this line shows a box/cube of yellow color on top of the barcode.
-
-You can also show other shapes in place of a box:
-<a-cone position='0 1 0' color="blue"></a-cone>
-<a-cylinder position='0 1 0' color="blue"></a-cylinder>
-<a-sphere position='0 1 0' color="blue"></a-sphere>
-<a-tetrahedron position='0 1 0' color="blue"></a-tetrahedron>
